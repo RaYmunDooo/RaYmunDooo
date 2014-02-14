@@ -7,7 +7,7 @@ if [ "${1}" != "" ];then
     export KERNELDIR=`readlink -f ${1}`
 fi
 
-RAMFS_TMP="/home/maresaron/android/temp/tmp/ramfs-source-sgs3"
+RAMFS_TMP="/home/ray/android/temp/tmp/ramfs-source-sgs3"
 
 .    $KERNELDIR/.config
 
@@ -84,6 +84,6 @@ rm $KERNELDIR/releasetools/zip/boot.img
 rm $KERNELDIR/releasetools/tar/boot.img
 rm $KERNELDIR/boot.img
 rm $KERNELDIR/zImage
-rm -rf /home/maresaron/android/temp/tmp/ramfs-source-sgs3
-rm /home/maresaron/android/temp/tmp/ramfs-source-sgs3.cpio.gz
+rm -rf /home/ray/android/temp/tmp/ramfs-source-sgs3
+rm /home/ray/android/temp/tmp/ramfs-source-sgs3.cpio.gz
 echo "...................................................Compilacion Terminada..........................................."
